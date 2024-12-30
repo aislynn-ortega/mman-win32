@@ -1,8 +1,9 @@
 
-cmake_minimum_required(VERSION 3.6)
+cmake_minimum_required(VERSION 2.8)
 project(mman C)
 
 set(VERSION "0.5.0")
+set(CMAKE_C_COMPILER "mingw32-gcc")
 
 option(MMAN_TEST   "Executes test [default: OFF]" OFF)
 option(MMAN_SHARED "Generate shared object [default: OFF]" OFF)

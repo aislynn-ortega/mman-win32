@@ -17,4 +17,12 @@ License: [MIT License](https://opensource.org/licenses/mit-license.php)
 3. Run `cmake .. && make -j2` command.
 4. Run `sudo make install` command.
 
+## Building with wine and mingw
 
+1. `winetricks cmake`
+2. Move to **build** directory
+3. `wine cmake .. -G "MinGW Makefiles"`
+4. `wine mingw32-make`
+5. `wine mingw32-install`
+
+Then add the includes to your CFLAGS and LDFLAGS
